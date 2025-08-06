@@ -1,66 +1,59 @@
-# ALURA-DADOS
+# Imersão de Dados com Python - Alura
 
-# 📊 Imersão de Dados - Alura (Aula 1)
+Este repositório contém os notebooks desenvolvidos durante a imersão de dados promovida pela Alura, utilizando a linguagem Python e o Google Colab como ambiente de desenvolvimento.
 
-Este repositório contém os códigos e anotações desenvolvidos durante a **Imersão de Dados da Alura**, utilizando Python e a biblioteca Pandas no Google Colab.
+## 👨‍🏫 Aula 1: Introdução ao Python e Manipulação de Dados
 
-## ✅ Aula 1 - Análise de Dados com Pandas
+### Objetivos:
+- Introduzir os conceitos básicos de Python e suas aplicações em ciência de dados.
+- Manipular dados com a biblioteca Pandas.
+- Compreender a estrutura de um DataFrame e realizar operações básicas.
 
-Nesta primeira aula, realizamos as seguintes atividades:
+### Conteúdos:
+- Apresentação da linguagem Python.
+- Uso do Google Colab.
+- Introdução à biblioteca Pandas.
+- Criação e exploração de DataFrames.
+- Métodos: `head()`, `tail()`, `info()`, seleção e filtragem de dados.
+- Conceitos iniciais sobre dados nulos.
+- Boas práticas de organização e comentários no código.
 
-### 🔹 Carregamento de Dados
+---
 
-- Leitura do arquivo `salaries.csv` com dados de profissionais da área de tecnologia:
-  - Fonte: [GitHub - guilhermeonrails](https://github.com/guilhermeonrails/data-jobs)
+## 🧼 Aula 2: Limpeza de Dados
 
-```python
-import pandas as pd
+### Objetivos:
+- Tratar dados faltantes em bases reais.
+- Renomear colunas e aplicar filtros.
+- Gerar estatísticas descritivas para análise.
 
-df = pd.read_csv("https://raw.githubusercontent.com/guilhermeonrails/data-jobs/refs/heads/main/salaries.csv")
-```
+### Conteúdos:
+- Verificação de dados nulos com `isnull()` e `sum()`.
+- Estratégias para tratar valores ausentes:
+  - Preenchimento com média, mediana ou valor fixo.
+  - Exclusão de linhas incompletas.
+- Criação de DataFrames fictícios para testes.
+- Uso dos métodos `fillna()`, `ffill()` e `bfill()`.
+- Conversão de tipos de dados com `astype()`.
+- Continuação das boas práticas de programação.
 
-🔹 Exploração Inicial dos Dados
-Visualização das primeiras linhas com df.head()
-Informações sobre tipos de dados com df.info()
-Estatísticas descritivas com df.describe()
-Verificação do número de linhas e colunas com df.shape
+---
 
-🔹 Renomeação das Colunas
-Tradução dos nomes das colunas para português para facilitar a leitura e entendimento.
+## 📂 Arquivos
 
-🔹 Análise de Colunas Categóricas
-Contagem de categorias das colunas:
-senioridade
-contrato
-remoto
-tamanho_empresa
+- `aula1.ipynb`: Notebook com conteúdo da Aula 1 e Aula 2.
+- `README.md`: Este arquivo com descrição do conteúdo do repositório.
 
-Mapeamento dos códigos para descrições mais claras, como por exemplo:
-SE → senior
-FT → integral
-100 → remoto
-M → media
+---
 
-🔹 Estatísticas das Colunas Categóricas
-Uso do describe(include='object') para verificar:
-Número de categorias únicas
-Categoria mais frequente
-Frequência dessa categoria
+## 🚀 Tecnologias Utilizadas
 
-❓ Perguntas que já conseguimos responder:
-Qual o nível de experiência mais comum na base de dados?
-Qual é o tipo de contrato mais frequente?
-Qual o cargo mais recorrente?
-De qual país são a maioria dos profissionais?
-Qual o regime de trabalho mais comum?
-Qual o tamanho mais comum das empresas?
+- Python 3
+- Google Colab
+- Pandas
 
-📌 Tecnologias utilizadas
-Python
-Pandas
-Google Colab
+---
 
-📅 Progresso
-✅ Aula 1 concluída
+## 📚 Fonte
 
-🔜 Aula 2 em breve...
+Curso de Imersão de Dados — [Alura](https://www.alura.com.br/)
