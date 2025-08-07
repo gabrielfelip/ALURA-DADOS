@@ -1,59 +1,110 @@
-# Imersão de Dados com Python - Alura
+📊 Imersão de Dados com Python - Alura
+Este repositório reúne os notebooks produzidos durante a Imersão de Dados com Python da Alura, utilizando Google Colab como ambiente e bibliotecas como Pandas, Matplotlib, Seaborn e Plotly para manipulação e visualização de dados.
 
-Este repositório contém os notebooks desenvolvidos durante a imersão de dados promovida pela Alura, utilizando a linguagem Python e o Google Colab como ambiente de desenvolvimento.
+👨‍🏫 Aula 1 — Introdução ao Python e Manipulação de Dados
+📌 Objetivos
 
-## 👨‍🏫 Aula 1: Introdução ao Python e Manipulação de Dados
+Conhecer o Python e seu uso em análise de dados.
 
-### Objetivos:
-- Introduzir os conceitos básicos de Python e suas aplicações em ciência de dados.
-- Manipular dados com a biblioteca Pandas.
-- Compreender a estrutura de um DataFrame e realizar operações básicas.
+Manipular dados com Pandas.
 
-### Conteúdos:
-- Apresentação da linguagem Python.
-- Uso do Google Colab.
-- Introdução à biblioteca Pandas.
-- Criação e exploração de DataFrames.
-- Métodos: `head()`, `tail()`, `info()`, seleção e filtragem de dados.
-- Conceitos iniciais sobre dados nulos.
-- Boas práticas de organização e comentários no código.
+Explorar a estrutura de um DataFrame e aplicar filtros.
 
----
+📚 Conteúdos
 
-## 🧼 Aula 2: Limpeza de Dados
+Introdução ao Google Colab.
 
-### Objetivos:
-- Tratar dados faltantes em bases reais.
-- Renomear colunas e aplicar filtros.
-- Gerar estatísticas descritivas para análise.
+Criação e exploração de DataFrames.
 
-### Conteúdos:
-- Verificação de dados nulos com `isnull()` e `sum()`.
-- Estratégias para tratar valores ausentes:
-  - Preenchimento com média, mediana ou valor fixo.
-  - Exclusão de linhas incompletas.
-- Criação de DataFrames fictícios para testes.
-- Uso dos métodos `fillna()`, `ffill()` e `bfill()`.
-- Conversão de tipos de dados com `astype()`.
-- Continuação das boas práticas de programação.
+Seleção e filtragem (loc[], iloc[]).
 
----
+Identificação de valores nulos.
 
-## 📂 Arquivos
+Boas práticas de código.
 
-- `aula1.ipynb`: Notebook com conteúdo da Aula 1 e Aula 2.
-- `README.md`: Este arquivo com descrição do conteúdo do repositório.
+💡 Exemplo
 
----
+import pandas as pd
 
-## 🚀 Tecnologias Utilizadas
+df = pd.DataFrame({
+    'Nome': ['Ana', 'Bruno', 'Carlos'],
+    'Idade': [25, 30, 35]
+})
 
-- Python 3
-- Google Colab
-- Pandas
+print(df.head())
 
----
 
-## 📚 Fonte
+🧼 Aula 2 — Limpeza de Dados
+📌 Objetivos
 
-Curso de Imersão de Dados — [Alura](https://www.alura.com.br/)
+Tratar dados ausentes.
+
+Renomear colunas e aplicar filtros.
+
+Obter estatísticas descritivas.
+
+📚 Conteúdos
+
+Verificação de dados nulos com isnull() e sum().
+
+Preenchimento com fillna(), ffill() e bfill().
+
+Exclusão de linhas incompletas.
+
+Conversão de tipos de dados (astype()).
+
+💡 Exemplo
+
+df['Idade'] = df['Idade'].fillna(df['Idade'].mean())
+df.info()
+
+
+📊 Aula 3 — Visualização de Dados
+📌 Objetivos
+
+Criar gráficos estatísticos.
+
+Utilizar bibliotecas Pandas, Matplotlib, Seaborn e Plotly.
+
+Personalizar visualizações.
+
+📚 Conteúdos
+
+Pandas plot() → gráficos rápidos.
+
+Seaborn → gráficos elegantes (sns.barplot(), sns.histplot(), sns.boxplot()).
+
+Matplotlib → títulos e rótulos (plt.title(), plt.xlabel(), plt.ylabel()).
+
+Plotly → gráficos interativos.
+
+Desafio → visualizar salário médio por país para cientista de dados.
+
+💡 Exemplo
+
+import seaborn as sns
+import matplotlib.pyplot as plt
+
+sns.histplot(df['Idade'], bins=5)
+plt.title("Distribuição de Idade")
+plt.show()
+
+📷 Exemplo de Gráfico
+
+📂 Arquivos no Repositório
+aula1.ipynb → Introdução ao Python e manipulação de dados.
+
+aula2.ipynb → Limpeza de dados.
+
+aula3.ipynb → Visualização de dados.
+
+🚀 Tecnologias Utilizadas
+Python 3 🐍
+Google Colab ☁️
+Pandas 🐼
+Matplotlib 📈
+Seaborn 🎨
+Plotly 📊
+
+📚 Fonte
+Curso de Imersão de Dados — Alura
