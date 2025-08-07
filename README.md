@@ -1,86 +1,89 @@
-Imersão de Dados com Python - Alura
-Este repositório contém os notebooks desenvolvidos durante a imersão de dados promovida pela Alura, utilizando a linguagem Python e o Google Colab como ambiente de desenvolvimento.
+## Imersão de Dados com Python - Alura
 
-👨‍🏫 Aula 1: Introdução ao Python e Manipulação de Dados
+Este repositório documenta os notebooks desenvolvidos durante a imersão de dados promovida pela Alura. O projeto utiliza Python e as bibliotecas Pandas, Matplotlib, Seaborn e Plotly no ambiente do Google Colab.
+
+---
+
+## 👨‍🏫 Aulas e Conteúdo
+**Aula 1:** Introdução ao Python e Manipulação de Dados
 Objetivos:
 
-Introduzir os conceitos básicos de Python e suas aplicações em ciência de dados.
+Introdução ao Python e suas aplicações em ciência de dados.
 
-Manipular dados com a biblioteca Pandas.
+Manipulação de dados com a biblioteca Pandas.
 
-Compreender a estrutura de um DataFrame e realizar operações básicas.
+Compreensão da estrutura de um DataFrame.
 
-Conteúdos:
+### Conteúdo:
 
-Introdução ao Python e Google Colab.
+**Criação e exploração de DataFrames.**
 
-Criação e exploração de DataFrames com Pandas.
+**Seleção e filtragem de dados.**
 
-Seleção e filtragem de dados.
+**Identificação de valores nulos.**
 
-Identificação de valores nulos.
+**Boas práticas e organização de código.**
 
-Boas práticas e organização de código.
+---
 
-🧼 Aula 2: Limpeza de Dados
+## Aula 2: Limpeza de Dados
 Objetivos:
 
-Tratar dados faltantes.
+Tratar dados ausentes e inconsistentes.
 
 Renomear colunas e aplicar filtros.
 
 Gerar estatísticas descritivas.
 
-Conteúdos:
+### Conteúdo:
 
-Verificação de dados nulos com isnull() e sum().
+**Verificação de dados nulos (isnull(), sum()).**
 
-Preenchimento e exclusão de valores ausentes (fillna(), ffill(), bfill()).
+**Preenchimento e exclusão de valores ausentes (fillna(), ffill(), bfill()).**
 
-Conversão de tipos de dados com astype().
+**Conversão de tipos de dados (astype()).**
 
-Continuação de boas práticas na manipulação de dados.
+**Continuação das boas práticas.**
 
-📊 Aula 3: Criação de Gráficos Estatísticos
+---
+
+## Aula 3: Criação de Gráficos Estatísticos
 Objetivos:
 
-Criar e personalizar gráficos para facilitar a análise de dados.
+Criar e personalizar gráficos para análise de dados.
 
-Utilizar bibliotecas Pandas, Matplotlib, Seaborn e Plotly.
+Utilizar as bibliotecas Pandas, Matplotlib, Seaborn e Plotly.
 
-Conteúdos:
+### Conteúdo:
 
-Gráficos com Pandas: uso de plot() para gráficos simples (ex.: barras).
+**Gráficos básicos com Pandas (.plot()).**
 
-Seaborn: gráficos mais elaborados e estéticos (sns.barplot(), sns.histplot(), sns.boxplot()).
+**Gráficos estéticos com Seaborn (.barplot(), .histplot(), .boxplot()).**
 
-Personalização: títulos, rótulos de eixos (plt.title(), plt.xlabel(), plt.ylabel()).
+**Personalização de gráficos (títulos, rótulos).**
 
-Distribuição de dados: histogramas e boxplots para identificar padrões e outliers.
+**Gráficos interativos com Plotly.**
 
-Plotly: gráficos interativos (ex.: média salarial por senioridade).
+---
 
-Desafio: criar visualização de salário médio por país para cientista de dados usando Plotly.
+## 📂 Estrutura do Repositório
 
-📂 Arquivos
-aula1.ipynb: Aula 1 e Aula 2.
+**aula1.ipynb:** Contém o código das aulas 1 e 2.
 
-aula3.ipynb: Aula 3.
+**aula3.ipynb:** Contém o código da aula 3.
 
-README.md: Descrição do conteúdo do repositório.
+---
 
-🚀 Tecnologias Utilizadas
+## 🚀 Tecnologias Utilizadas
 Python 3
 
 Google Colab
-
 Pandas
-
 Matplotlib
-
 Seaborn
-
 Plotly
 
-📚 Fonte
-Curso de Imersão de Dados — Alura
+---
+
+## 📚 Fonte
+Curso de Imersão de Dados da Alura
